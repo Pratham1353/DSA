@@ -1,3 +1,4 @@
+import java.math.*;
 import java.lang.Math;
 import java.util.*;
 class P1{
@@ -31,17 +32,22 @@ class P1{
         // int n = sc.nextInt();
         // armstrong(n);
 
-        System.out.print("Enter number of elements of array:");
-        int n = sc.nextInt();
-        System.out.print("Enter elements of array:");
-        int[] a = new int[n];
-        for(int i = 0; i< n; i++){
-            a[i] = sc.nextInt(); 
-        }
-        System.out.print("Enter element you want to find:");
-        int x = sc.nextInt();
-        // linearSearch(a,n,x);
-        binarysearch(a,0,n,x);
+        // System.out.print("Enter number of elements of array:");
+        // int n = sc.nextInt();
+        // System.out.print("Enter elements of array:");
+        // int[] a = new int[n];
+        // for(int i = 0; i< n; i++){
+        //     a[i] = sc.nextInt(); 
+        // }
+        // System.out.print("Enter element you want to find:");
+        // int x = sc.nextInt();
+        // // linearSearch(a,n,x);
+        // binarysearch(a,0,n,x);
+
+        System.out.print("Enter any Float number:");
+        float a = sc.nextFloat();
+        System.out.println("Ceiling value of " + a + " is " + Math.ceil(a));
+        System.out.println("Floor value of " + a + " is " + Math.floor(a));
     }
     public static int max(int a,int b, int c){
         if(a>b){
