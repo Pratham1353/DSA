@@ -18,36 +18,36 @@ class P1{
         int a = sc.nextInt();
         occurence(n,a);
     }
-    // public static int max(int a,int b, int c){
-    //     if(a>b){
-    //         if(a>c){
-    //             return a;
-    //         }
-    //         else{
-    //             return c;
-    //         }
-    //     }
-    //     else{
-    //         if(b>c){
-    //             return b;
-    //         }
-    //         else{
-    //             return c;
-    //         }
-    //     }
-    // }
-    // public static void fibonacci(int n){
-    //     int FT = 0;
-    //     int ST = 1;
-    //     int NT;
-    //     while(n>0){
-    //         System.out.println(FT);
-    //         NT = FT + ST;
-    //         FT = ST;
-    //         ST = NT;
-    //         n--;
-    //     }
-    // }
+    public static int max(int a,int b, int c){
+        if(a>b){
+            if(a>c){
+                return a;
+            }
+            else{
+                return c;
+            }
+        }
+        else{
+            if(b>c){
+                return b;
+            }
+            else{
+                return c;
+            }
+        }
+    }
+    public static void fibonacci(int n){
+        int FT = 0;
+        int ST = 1;
+        int NT;
+        while(n>0){
+            System.out.println(FT);
+            NT = FT + ST;
+            FT = ST;
+            ST = NT;
+            n--;
+        }
+    }
     public static void occurence(int n, int a){
         int count = 0;
         int b;
