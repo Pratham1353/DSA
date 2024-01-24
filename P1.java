@@ -12,11 +12,15 @@ class P1{
         // int n = sc.nextInt();
         // fibonacci(n);
 
+        // System.out.print("Enter any number:");
+        // int n = sc.nextInt();
+        // System.out.print("Enter number you want find occurence:");
+        // int a = sc.nextInt();
+        // occurence(n,a);
+
         System.out.print("Enter any number:");
         int n = sc.nextInt();
-        System.out.print("Enter number you want find occurence:");
-        int a = sc.nextInt();
-        occurence(n,a);
+        reverse(n);
     }
     public static int max(int a,int b, int c){
         if(a>b){
@@ -59,5 +63,15 @@ class P1{
             n = n/10;
         }
         System.out.println(count);
+    }
+    public static void reverse(int n){
+        int a;
+        int reverse = 0;
+        while(n>0){
+            a = n%10;
+            reverse = 10*reverse + a;
+            n=n/10;
+        }
+        System.out.println(reverse);
     }
 }
