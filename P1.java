@@ -18,9 +18,13 @@ class P1{
         // int a = sc.nextInt();
         // occurence(n,a);
 
+        // System.out.print("Enter any number:");
+        // int n = sc.nextInt();
+        // reverse(n);
+
         System.out.print("Enter any number:");
         int n = sc.nextInt();
-        reverse(n);
+        prime(n);
     }
     public static int max(int a,int b, int c){
         if(a>b){
@@ -73,5 +77,19 @@ class P1{
             n=n/10;
         }
         System.out.println(reverse);
+    }
+
+    public static void prime(int n){
+        int flag = 0;
+        for(int i = 2; i < n; i++){
+            if(n%i == 0){
+                System.out.println(n + " is not a prime number.");
+                flag++;
+                break;
+            }
+        }
+        if(flag == 0){
+            System.out.println(n + " is a prime number.");
+        }
     }
 }
