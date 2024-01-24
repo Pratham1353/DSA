@@ -30,16 +30,3 @@ class P1{
     //         }
     //     }
     // }
-    public static void fibonacci(int n){
-        int FT = 0;
-        int ST = 1;
-        int NT;
-        while(n>0){
-            System.out.println(FT);
-            NT = FT + ST;
-            FT = ST;
-            ST = NT;
-            n--;
-        }
-    }
-}
