@@ -1,3 +1,4 @@
+import java.lang.Math;
 import java.util.*;
 class P1{
     public static void main(String args[]){
@@ -22,9 +23,13 @@ class P1{
         // int n = sc.nextInt();
         // reverse(n);
 
+        // System.out.print("Enter any number:");
+        // int n = sc.nextInt();
+        // prime(n);
+
         System.out.print("Enter any number:");
         int n = sc.nextInt();
-        prime(n);
+        armstrong(n);
     }
     public static int max(int a,int b, int c){
         if(a>b){
@@ -90,6 +95,29 @@ class P1{
         }
         if(flag == 0){
             System.out.println(n + " is a prime number.");
+        }
+    }
+
+    public static void armstrong(int n){
+        int a=0;
+        int dig = 0;
+        int b = 0;
+        int c = n;
+        while(c>0){
+            dig++;
+            c=c/10;
+        }
+        c=n;
+        while(c>0){
+            a=c%10;
+            b+=(Math.pow(a, dig));
+            c=c/10;
+        }
+        if(n == b){
+            System.out.println(n + " is armstrong number.");
+        }
+        else{
+            System.out.println(n + " is not armstrong number.");
         }
     }
 }
