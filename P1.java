@@ -27,9 +27,20 @@ class P1{
         // int n = sc.nextInt();
         // prime(n);
 
-        System.out.print("Enter any number:");
+        // System.out.print("Enter any number:");
+        // int n = sc.nextInt();
+        // armstrong(n);
+
+        System.out.print("Enter number of elements of array:");
         int n = sc.nextInt();
-        armstrong(n);
+        System.out.print("Enter elements of array:");
+        int[] a = new int[n];
+        for(int i = 0; i< n; i++){
+            a[i] = sc.nextInt(); 
+        }
+        System.out.print("Enter element you want to find:");
+        int x = sc.nextInt();
+        linearSearch(a,n,x);
     }
     public static int max(int a,int b, int c){
         if(a>b){
@@ -118,6 +129,14 @@ class P1{
         }
         else{
             System.out.println(n + " is not armstrong number.");
+        }
+    }
+
+    public static void linearSearch(int a[],int n, int x){
+        for(int  i = 0; i < n; i++){
+            if(a[i] == x){
+                System.out.println("Elment " + x + " is at index " + i);
+            }
         }
     }
 }
