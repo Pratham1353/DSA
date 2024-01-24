@@ -40,7 +40,8 @@ class P1{
         }
         System.out.print("Enter element you want to find:");
         int x = sc.nextInt();
-        linearSearch(a,n,x);
+        // linearSearch(a,n,x);
+        binarysearch(a,0,n,x);
     }
     public static int max(int a,int b, int c){
         if(a>b){
@@ -137,6 +138,19 @@ class P1{
             if(a[i] == x){
                 System.out.println("Elment " + x + " is at index " + i);
             }
+        }
+    }
+
+    public static void binarysearch(int a[],int mid, int n,int x){
+        mid = n/2;
+        if(a[mid] == x){
+            System.out.println("Element " + x + " is at index " + mid);
+        }
+        else if(a[mid] < x){
+            binarysearch(a, mid+1, n, x);
+        }
+        else if(a[mid] > x){
+            binarysearch(a, 0, mid, x);
         }
     }
 }
