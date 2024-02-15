@@ -44,10 +44,9 @@ class P1{
         // // linearSearch(a,n,x);
         // binarysearch(a,0,n,x);
 
-        // System.out.print("Enter any Float number:");
-        // float a = sc.nextFloat();
-        // System.out.println("Ceiling value of " + a + " is " + Math.ceil(a));
-        // System.out.println("Floor value of " + a + " is " + Math.floor(a));
+        int[] a = {1,2,9,11,15,16,17};
+        int target = 5;
+        System.out.println(ceiling(a,target));
     }
     public static int max(int a,int b, int c){
         if(a>b){
@@ -158,5 +157,24 @@ class P1{
         else if(a[mid] > x){
             binarysearch(a, 0, mid, x);
         }
+    }
+
+    static int ceiling(int[] a, int target){
+        int st = 0;
+        int end = a.length-1;
+        int mid = 0; 
+        while(st<=end){
+            mid = st + (end - st) / 2;
+            if(a[mid]<target){
+                st = mid + 1;
+            }
+            else if(a[mid]>target){
+                end = mid - 1;
+            }
+            else{
+                return a[mid];
+            }
+        }
+        return a[st];
     }
 }
