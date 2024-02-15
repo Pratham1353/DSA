@@ -44,10 +44,10 @@ class P1{
         // // linearSearch(a,n,x);
         // binarysearch(a,0,n,x);
 
-        System.out.print("Enter any Float number:");
-        float a = sc.nextFloat();
-        System.out.println("Ceiling value of " + a + " is " + Math.ceil(a));
-        System.out.println("Floor value of " + a + " is " + Math.floor(a));
+        // System.out.print("Enter any Float number:");
+        // float a = sc.nextFloat();
+        // System.out.println("Ceiling value of " + a + " is " + Math.ceil(a));
+        // System.out.println("Floor value of " + a + " is " + Math.floor(a));
     }
     public static int max(int a,int b, int c){
         if(a>b){
