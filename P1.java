@@ -44,9 +44,6 @@ class P1{
         // // linearSearch(a,n,x);
         // binarysearch(a,0,n,x);
 
-        int[] a = {1,2,9,11,15,16,17};
-        int target = 5;
-        System.out.println(ceiling(a,target));
     }
     public static int max(int a,int b, int c){
         if(a>b){
