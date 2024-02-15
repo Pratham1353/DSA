@@ -30,6 +30,7 @@ public class P2 {
         }
         return count;
     }
+    
     static int maxWealth(int[][] a){
         int max = 0;
         for(int i = 0; i < a.length; i++){
